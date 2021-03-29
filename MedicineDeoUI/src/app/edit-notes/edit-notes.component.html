@@ -1,0 +1,7 @@
+<div class="backdrop" (click)="onClose()"></div>
+<div class="popup-box">
+  <input type="text" [(ngModel)]="notes" />
+  <div class="alert-box-actions">
+    <button class="btn btn-primary" (click)="onSave()">Save</button>
+  </div>
+</div>

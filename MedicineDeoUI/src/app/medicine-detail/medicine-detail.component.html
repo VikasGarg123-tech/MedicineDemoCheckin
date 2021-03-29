@@ -1,0 +1,58 @@
+<h2>Medicine - Details:</h2>
+<form [formGroup]="detailMedForm">
+  <table id="medicine">
+    <tr>
+      <td>
+        <span>Name:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="mname" name="mname" readonly />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Brand:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="brand" name="brand" readonly />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>ExpiryDate:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="expiryDate" name="expiryDate" readonly />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Price:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="price" name="price" readonly />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Quantity:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="quantity" name="quantity" readonly />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Notes:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="notes" name="notes" readonly />
+        <input type="button" value="Edit" (click)="OnEditNotes()" />
+      </td>
+    </tr>
+  </table>
+  <div>
+    <button type="button" (click)="OnBack()">Back</button>
+  </div>
+  <app-edit-notes *ngIf="editNotes" [notes]="notes" (save)="onNotesSave($event)" (close)="onNotesClose()"></app-edit-notes>
+</form>

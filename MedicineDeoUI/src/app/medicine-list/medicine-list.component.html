@@ -1,0 +1,30 @@
+<H2>Medicine List:</H2>
+<br />
+<input type="text" [(ngModel)]="filterByName" />
+
+<table id="medicine">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Brand</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>ExpiryDate</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngIf="( medicineList | filter : filterByName : 'name') as result">
+      <tr *ngFor="let medicine of result" [ngStyle]="{'background-color': medicine.isMedicineExpiring? 'red' : (medicine.quantity < 10? 'yellow':'white')}">
+        <td>{{medicine.name}}</td>
+        <td>{{medicine.brand}}</td>
+        <td>{{medicine.price}}</td>
+        <td>{{medicine.quantity}}</td>
+        <td>{{medicine.expiryDate | date:'dd MMM yyyy'}}</td>
+        <td> <input type="button" value="Edit" (click)="OnRowSelected(medicine)" /></td>
+      </tr>
+      <tr *ngIf="result.length === 0"><td colspan="5">No Data Found</td></tr>
+    </ng-container>
+  </tbody>
+</table>
+<button (click)="OnAddMedicineClick()">Add Medicine</button>

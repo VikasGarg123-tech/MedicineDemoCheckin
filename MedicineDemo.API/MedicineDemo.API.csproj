@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MedicineDemo.Businesslogic\MedicineDemo.Businesslogic.csproj" />
+    <ProjectReference Include="..\MedicineDemo.Businessmodel\MedicineDemo.Businessmodel.csproj" />
+    <ProjectReference Include="..\MedicineDemo.DataAccess\MedicineDemo.DataAccess.csproj" />
+    <ProjectReference Include="..\MedicineDemo.DataRepository\MedicineDemo.DataRepository.csproj" />
+  </ItemGroup>
+
+
+</Project>

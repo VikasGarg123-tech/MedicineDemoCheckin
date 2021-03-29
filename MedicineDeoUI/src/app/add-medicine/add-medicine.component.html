@@ -1,0 +1,62 @@
+<h2>Add-Medicine:</h2>
+<form [formGroup]="addMedForm" (ngSubmit)="saveMedicine()">
+  <table id="medicine">
+    <tr>
+      <td>
+        <span>Name:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="mname" name="mname" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Brand:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="brand" name="brand" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>ExpiryDate:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="expiryDate" name="expiryDate" appExpireMedicineValidator />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Price:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="price" name="price" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Quantity:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="quantity" name="quantity" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Notes:</span>
+      </td>
+      <td>
+        <input type="text" formControlName="notes" name="notes" />
+      </td>
+    </tr>
+  </table>
+  <div>
+    <button type="submit" [disabled]="addMedForm.controls['expiryDate'].errors && addMedForm.controls['expiryDate'].errors.expiredMedicine">Save</button>
+    <button type="button" (click)="OnBack()">Back</button>
+  </div>
+  <div>
+    <p *ngIf="addMedForm.controls['expiryDate'].errors && addMedForm.controls['expiryDate'].errors.expiredMedicine">
+      Medicine with Expiry date less than 30 days is not allowed to add in the stock.
+    </p>
+  </div>
+</form>

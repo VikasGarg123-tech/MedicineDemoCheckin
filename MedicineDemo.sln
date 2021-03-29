@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicineDemo.API", "MedicineDemo.API\MedicineDemo.API.csproj", "{6BA0E076-9014-4AD3-8A18-BCFAEF22B966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicineDemo.Businesslogic", "MedicineDemo.Businesslogic\MedicineDemo.Businesslogic.csproj", "{B7BFA84B-A2ED-44B4-9939-91A2F67D893B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicineDemo.Businessmodel", "MedicineDemo.Businessmodel\MedicineDemo.Businessmodel.csproj", "{7AFB83CA-F6EC-4CC7-9863-9BF21F895A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicineDemo.DataAccess", "MedicineDemo.DataAccess\MedicineDemo.DataAccess.csproj", "{D9316CF8-4DBF-43F7-8787-2E760D10A9CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicineDemo.DataRepository", "MedicineDemo.DataRepository\MedicineDemo.DataRepository.csproj", "{42A7D162-A783-46B1-9785-EBAF00FE697C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicineDemo.API.TestProject", "MedicineDemo.API.TestProject\MedicineDemo.API.TestProject.csproj", "{348BCBBB-8DB1-46AF-8BD3-CE07B73B115D}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MedicineDeoUI", "MedicineDeoUI\", "{B615EE4E-6629-453C-9CA6-FBA6F90715A6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50045"
+		Debug.AspNetCompiler.PhysicalPath = "MedicineDeoUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50045\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50045"
+		Release.AspNetCompiler.PhysicalPath = "MedicineDeoUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50045\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50045"
+		SlnRelativePath = "MedicineDeoUI\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BA0E076-9014-4AD3-8A18-BCFAEF22B966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA0E076-9014-4AD3-8A18-BCFAEF22B966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA0E076-9014-4AD3-8A18-BCFAEF22B966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA0E076-9014-4AD3-8A18-BCFAEF22B966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7BFA84B-A2ED-44B4-9939-91A2F67D893B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BFA84B-A2ED-44B4-9939-91A2F67D893B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BFA84B-A2ED-44B4-9939-91A2F67D893B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BFA84B-A2ED-44B4-9939-91A2F67D893B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFB83CA-F6EC-4CC7-9863-9BF21F895A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFB83CA-F6EC-4CC7-9863-9BF21F895A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFB83CA-F6EC-4CC7-9863-9BF21F895A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFB83CA-F6EC-4CC7-9863-9BF21F895A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9316CF8-4DBF-43F7-8787-2E760D10A9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9316CF8-4DBF-43F7-8787-2E760D10A9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9316CF8-4DBF-43F7-8787-2E760D10A9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9316CF8-4DBF-43F7-8787-2E760D10A9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A7D162-A783-46B1-9785-EBAF00FE697C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A7D162-A783-46B1-9785-EBAF00FE697C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A7D162-A783-46B1-9785-EBAF00FE697C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A7D162-A783-46B1-9785-EBAF00FE697C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348BCBBB-8DB1-46AF-8BD3-CE07B73B115D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348BCBBB-8DB1-46AF-8BD3-CE07B73B115D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348BCBBB-8DB1-46AF-8BD3-CE07B73B115D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348BCBBB-8DB1-46AF-8BD3-CE07B73B115D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B615EE4E-6629-453C-9CA6-FBA6F90715A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B615EE4E-6629-453C-9CA6-FBA6F90715A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B615EE4E-6629-453C-9CA6-FBA6F90715A6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B615EE4E-6629-453C-9CA6-FBA6F90715A6}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D267908B-F74A-4623-B4A9-B640A781167F}
+	EndGlobalSection
+EndGlobal
